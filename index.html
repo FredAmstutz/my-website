@@ -1,1 +1,182 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Sarala" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./scripts/fontawesome-all.js"></script>
+    <script src="./scripts/smooth-scroll.js"></script>
+    <title>Fred Amstutz</title>
+</head>
+<body>
+    <section class="navbar">
+        <a href="#main">
+            <div class="brand">
+                <i class="fas fa-rocket"></i>
+                <div class="brand-text">
+                    <h1>Fred Amstutz</h1>
+                </div>
+            </div>
+        </a>
+        <div class="nav">
+            <a href="#about">
+                <div class="nav-link">
+                    <h1>About</h1>
+                </div>
+            </a>
+            <a href="#work">
+                <div class="nav-link">
+                    <h1>Work</h1>
+                </div>
+            </a>
+            <a href="#contact">
+                <div class="nav-link">
+                    <h1>Contact </h1>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- MOBILE NAV -->
+    <section class="mobile-navbar">
+        <a href="#main">
+            <div class="mobile-nav-link">
+                <div class="mobile-brand">
+                    <i class="fas fa-rocket"></i>
+                    <h1>Fred Amstutz</h1>   
+                </div>
+            </div>
+        </a>
+        <a href="#about">
+            <div class="mobile-nav-link">
+                <h1>About</h1>
+            </div>
+        </a>
+        <a href="#work">
+            <div class="mobile-nav-link">
+                <h1>Work</h1>
+            </div>
+        </a>
+        <a href="#contact">
+            <div class="mobile-nav-link">
+                <h1>Contact</h1> 
+            </div>
+        </a>
+    <!-- MOBILE NAV END -->
+    </section>
+    <section class="main" id="main">
+        <div class="content">
+            <img src="images/photo.jpg" alt="headshot">
+            <div class="main-text">
+                <h1>Aspiring Application Developer</h1>
+                <p>Thanks for visiting my website. Learn more below.</p>
+                <a href="#about">
+                    <div class="main-text-button">Learn more</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-text">
+            <h1>A little bit about me</h1>
+            <hr>
+            <div class="about-content">
+                <p>Midwest raised, I'm currently a transplant based in New York City. I moved here to further my career and learn about web development. My main area of focus is front end, with knowledge in React, HTML/CSS/JS, and Node. I'm new to the industry and looking for experience. If you're interested in any of the work I've done below, feel free to reach out and let's get in touch.</p>
+            </div>
+        </div>
+        <div class="about-skills">
+            <h1>What I do</h1>
+            <div class=skills>
+                <div class=skills-top>
+                    <div class="skill">
+                        <i class="fas fa-code"></i>
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="skills-bottom">
+                    <div class="skill">
+                        <i class="fab fa-react"></i>
+                        <p>React.js</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-node-js"></i>
+                        <p>Node.js</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-git"></i>
+                        <p>Git</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-npm"></i>
+                        <p>NPM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work" id="work">
+        <h1 class="work-headline">Check out some of my projects below</h1>
+        <div class="work-projects">
+            <div class=project-list>
+                <a href="https://taxisandtrains.herokuapp.com/" target="_blank">
+                <div class="project">
+                    <img src="images/game-screenshot.png">
+                    <div class="mobile-project-info">
+                        <h1>Taxis and Trains</h1>
+                        <hr>
+                        <p>Built with React, this simple boardgame pits two players against eachother to see who can make the fastest New York commute.</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://cookieconfectionary.herokuapp.com/" target="_blank">
+                <div class="project">
+                    <img src="https://www.gonnawantseconds.com/wp-content/uploads/2014/12/Holiday-MM-Cookies-640x640.jpg">
+                    <div class="mobile-project-info">
+                        <h1>Cookie Confectionary</h1>
+                        <hr>
+                        <p>A simple React application using Cookies.js where the user can get, set, and clear cookies in the browser.</p>
+                    </div>
+                </div>
+                </a>
+                <a href="https://myopenweatherapp.herokuapp.com/" target="_blank">
+                <div class="project">
+                    <img src="https://i.pinimg.com/originals/a4/5a/8f/a45a8f7361e70a2665b5fa3d654d24b4.jpg">
+                    <div class="mobile-project-info">
+                        <h1>Open Weather App</h1>
+                        <hr>
+                        <p>Leveraging the OpenWeatherMap API, this was an exercise on the basics of extracting, transforming and loading data from an API.</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Get in touch with me</h1>
+        <div class="contact-sites">
+            <a href="https://www.linkedin.com/in/frederick-amstutz-39b31049
+            " target="_blank">
+                <div class="contact-site">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </div>
+            </a>
+            <a href="https://twitter.com/Fred_Amstutz" target="_blank">
+                <div class="contact-site">
+                        <i class="fab fa-twitter-square"></i>
+                    <p>Twitter</p>
+                </div>
+            </a>
+        </div>
+        <p>You can also reach me at fred4892@gmail.com or find me on Github at github.com/FredAmstutz.</p>
+    </section>
+</body>
+</html>

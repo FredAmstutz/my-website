@@ -1,0 +1,530 @@
+/* /////////////////////////////////////// */
+/* GLOBAL */
+/* /////////////////////////////////////// */
+
+body {
+    margin: 0;
+    font-family: 'Sarala', sans-serif;
+}
+
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.fa-code, .fa-css3-alt, .fa-js-square, .fa-react, .fa-node-js, .fa-git, .fa-npm, .fa-rocket, .fa-linkedin, .fa-github, .fa-twitter-square {
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: .75rem;
+    }
+
+    .fa-code, .fa-css3-alt, .fa-js-square, .fa-react, .fa-node-js, .fa-git, .fa-npm, .fa-rocket, .fa-linkedin, .fa-github, .fa-twitter-square {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .main {
+        height: 200vh;
+    }
+    
+    .about {
+        height: 250vh;
+    }
+
+    .work {
+        height: 200vh;
+    } 
+}
+
+/* /////////////////////////////////////// */
+/* NAVBAR */
+/* /////////////////////////////////////// */
+
+.navbar {
+    font-family: 'Cabin Sketch', cursive;
+    background-color: rgba(0, 129, 54, 0.801);
+    border-bottom: 3px solid white;
+    color: white;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 6vw;
+    padding: 0 20px;
+}
+
+.brand:hover {
+    background-color: rgb(0, 202, 84);
+    cursor: pointer;
+}
+
+.brand .fa-rocket {
+    margin-right: 1vw;
+}
+
+.nav {
+    display: flex;
+    margin-right: 6vw;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    margin: auto 1vw;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.nav-link:hover {
+    background-color: rgb(0, 202, 84);
+    cursor: pointer;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+@media only screen and (max-width: 1030px) and (orientation: landscape) {
+    .nav-link {
+        height: 70px;
+    }
+
+   .brand {
+       height: 70px;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-navbar {
+        font-family: 'Cabin Sketch', cursive;
+        height: 30vh;
+        width: 100%;
+        background-color: rgb(0, 129, 54);
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-nav-link {
+        height: 7.25vh;
+        border-bottom: 2px solid white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-brand {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile-brand h1 {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .mobile-nav-link {
+        height: 9vh;
+        background-color: rgb(0, 129, 54);
+    }
+}
+
+/* /////////////////////////////////////// */
+/* MAIN */
+/* /////////////////////////////////////// */
+
+.main {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.main .content img {
+    height: 30vh;
+    align-self: center;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.main-text {
+    background-color: rgb(45, 51, 58);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.main-text h1 {
+    margin: 0;
+}
+
+.main-text-button {
+    background-color: rgb(0, 129, 54);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 160px;
+    border-radius: 25px;
+}
+
+.main-text-button:hover {
+    background-color: rgb(0, 202, 84);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .main {
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .main {
+        height: 70vh;
+    }
+
+    .main-text {
+        width: 70vw;
+        text-align: center;
+    }
+    
+    .main-text-button {
+        width: 100px;
+        font-size: .75rem;
+    }
+}
+
+/* /////////////////////////////////////// */
+/* ABOUT */
+/* /////////////////////////////////////// */
+
+.about {
+    background-color: rgb(45, 51, 58);
+    width: 100%;
+    height: 140vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-text {
+    background-color: rgba(0, 129, 54, 0.801);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 0 1vh 0;
+    padding: 3vh 4vw;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.about-text hr {
+    width: 75px;
+}
+
+.about-text h1 {
+    margin: 0;
+}
+
+.about-content {
+    display: flex;
+}
+.about-skills {
+    background-color: rgba(0, 129, 54, 0.801);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 1vh 0 0 0;
+    padding: 3vh 4vw;
+    border-radius: 25px;
+    border: 3px solid white;
+} 
+
+.about-skills h1 {
+    margin: 0 0 20px 0;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-top, .skills-bottom {
+    display: flex;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2vw;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about-text {
+        height: 35vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-skills {
+        height: 35vh;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .about-text {
+        width: 70vw;
+        margin: 5px 0 0 3px;
+    }
+
+    .skills {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .about {
+        height: 200vh;
+    }
+}
+
+/* /////////////////////////////////////// */
+/* WORK */
+/* /////////////////////////////////////// */
+
+.work {
+    background-color: white;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 60%;
+}
+
+.project-list {
+    display: flex;
+    height: 100%;
+}
+
+.project {
+    background-color: rgb(0, 129, 54);
+    width: 25vw;    
+    height: 100%;
+    overflow: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 3vw;
+    border: 3px solid rgb(45, 51, 58);
+}
+
+.project img {
+    width: 50%;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+
+.project hr {
+    margin: 0 auto;
+    width: 30%;
+}
+
+.project p {
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .work {
+        text-align: center;
+        height: 150vh;
+        justify-content: initial;
+    }
+    
+    .work-headline {
+        margin: 4vh 12vw 3vh;
+    }
+
+    .project-list {
+       flex-direction: column;
+   }
+
+   .project {
+       width: 80vw;
+       height: 35vh;
+       margin: 8px 0;
+       display: flex;
+       flex-direction: row;
+       background-color: rgb(0, 129, 54);
+   }
+
+   .project img {
+       width: 35%;
+       margin: 0 3px 0 10px;
+   }
+
+   .mobile-project-info {
+       display: flex;
+       flex-direction: column;
+       margin: 0;
+   }
+
+   .mobile-project-info h1, p {
+       margin: 3px 0;
+   }
+
+   .mobile-project-info hr {
+       display: none;
+   }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .work {
+        height: 200vh;
+    }
+
+    .project {
+        height: 50vh;
+    }
+
+    .project img {
+        width: 20%;
+    }
+}
+
+/* /////////////////////////////////////// */
+/* CONTACT */
+/* /////////////////////////////////////// */
+
+.contact {
+    background-color: rgb(45, 51, 58);
+    color: white;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-sites {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.contact-site p {
+    margin: 10px 0 0 0;
+}
+
+.contact-site:hover {
+    background-color: rgb(95, 105, 116);
+    cursor: pointer;
+}
