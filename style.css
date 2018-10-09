@@ -16,7 +16,6 @@ i {
 .about,
 .work,
 .contact {
-    /* background-color: #2d333a; */
     background-color: #474a4c;
     display: flex;
     flex-direction: column;
@@ -273,6 +272,10 @@ i {
 .work {
     background-color: white;
     height: 700px;
+}
+
+.work h1 {
+    padding-top: 40px;
 }
 
 .work .content .block {
