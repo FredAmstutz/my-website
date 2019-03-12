@@ -320,7 +320,7 @@ i {
 }
 
 .work .content .block .thumbnail-two {
-    background-image: url('https://www.gonnawantseconds.com/wp-content/uploads/2014/12/Holiday-MM-Cookies-640x640.jpg');
+    background-image: url('./img/nyc.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
